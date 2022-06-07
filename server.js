@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 app.use(express.static('public'));
 
-MongoClient.connect('mongodb+srv://maceWindu:NcFBvYscEmv1cuSl@cluster0.peozeft.mongodb.net/?retryWrites=true&w=majority', {useUnifiedTopology: true})
+MongoClient.connect('mongodb+srv://<userName>:<password>@cluster0.peozeft.mongodb.net/?retryWrites=true&w=majority', {useUnifiedTopology: true})
     .then(client => {
         console.log('Connected to Database');
         const db = client.db('starQuotes');
